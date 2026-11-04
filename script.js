@@ -988,8 +988,6 @@ const buildProjectCard = (project) => {
   download.href = getOfficialDownloadPage(project);
   download.rel = "noopener";
 
-  download.target = "_blank";
-
   const updates = createElement("a", "button button-ghost", t("updatesProjectButton"));
   updates.href = buildUpdatesLink(project);
   updates.target = "_blank";
