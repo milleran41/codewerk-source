@@ -846,17 +846,18 @@ const getProjectPageUrl = (projectId) => {
   return pageUrl.toString();
 };
 
+const getOfficialDownloadPage = (project) => `https://milleran41.github.io/codewerk/#${encodeURIComponent(project.id)}`;
+
 const buildEmailBody = (project) => {
   const projectUrl = getProjectPageUrl(project.id);
-  const isRequestDownload = project.downloadMode === "request";
   return [
     project.title,
     "",
     t("projectPage"),
     projectUrl,
     "",
-    isRequestDownload ? t("requestDownloadLine") : t("downloadLine"),
-    isRequestDownload ? buildDownloadRequestLink(project) : project.downloadUrl || project.githubUrl,
+    t("downloadLine"),
+    getOfficialDownloadPage(project),
     "",
     t("howToDownload"),
     t("howToDownloadStep1"),
@@ -982,22 +983,12 @@ const buildProjectCard = (project) => {
   const mediaActions = createElement("div", "media-actions");
   const contentActions = createElement("div", "project-actions feedback-actions");
   const isRequestDownload = project.downloadMode === "request";
-  const download = createElement("a", "button button-primary", isRequestDownload ? t("requestDownload") : t("download"));
+  const download = createElement("a", "button button-primary", t("download"));
   download.classList.add(isRequestDownload ? "request-download" : "direct-download");
-  download.href = isRequestDownload ? buildDownloadRequestLink(project) : project.downloadUrl || project.githubUrl;
+  download.href = getOfficialDownloadPage(project);
   download.rel = "noopener";
 
-  if (isRequestDownload) {
-    download.target = "_blank";
-  } else if (project.downloadUrl && isDirectDownload(project.downloadUrl)) {
-    download.setAttribute("download", "");
-    download.addEventListener("click", (event) => {
-      event.preventDefault();
-      startDownload(project.downloadUrl);
-    });
-  } else {
-    download.target = "_blank";
-  }
+  download.target = "_blank";
 
   const updates = createElement("a", "button button-ghost", t("updatesProjectButton"));
   updates.href = buildUpdatesLink(project);
