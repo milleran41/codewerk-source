@@ -26,7 +26,7 @@
 Для карточки программы QR-код должен вести не на скачивание, а на якорь этой программы на сайте:
 
 ```text
-https://milleran41.github.io/codewerk/#cookbook
+https://milleran41.github.io/codewerk-source/#cookbook
 ```
 
 Так человек сможет открыть страницу программы на телефоне, прочитать описание и позже скачать файл уже на компьютере. Не делайте QR-коды на прямые ссылки `.exe` или `.zip`: телефон может сразу начать скачивать компьютерную программу.
@@ -34,7 +34,7 @@ https://milleran41.github.io/codewerk/#cookbook
 Например, QR для таймера должен вести на:
 
 ```text
-https://milleran41.github.io/codewerk/#timer
+https://milleran41.github.io/codewerk-source/#timer
 ```
 
 Если сайт ещё не опубликован на GitHub Pages, ссылка `https://milleran41.github.io/...` будет открывать 404. Сначала опубликуйте сайт, проверьте адрес в браузере, и только потом создавайте QR-коды.
@@ -42,7 +42,7 @@ https://milleran41.github.io/codewerk/#timer
 Для главной визитки QR-код должен вести на главную страницу:
 
 ```text
-https://milleran41.github.io/codewerk/
+https://milleran41.github.io/codewerk-source/
 ```
 
 Сохраните QR-код в папку `assets/qr/`, например `assets/qr/cookbook.png`, и укажите этот путь в `data/projects.json`.
@@ -58,7 +58,7 @@ https://milleran41.github.io/codewerk/
 После публикации сайт будет доступен по адресу:
 
 ```text
-https://milleran41.github.io/codewerk/
+https://milleran41.github.io/codewerk-source/
 ```
 
 ## Важное про локальный запуск

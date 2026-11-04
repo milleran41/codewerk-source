@@ -396,7 +396,7 @@ const localProjectsFallback = [
     downloadMode: "direct",
     downloadUrl: "https://github.com/milleran41/taste-and-trace-download/releases/download/v0.0.0/Taste.Trace-Portable-0.0.0-x64.exe",
     qrImage: "assets/qr/cookbook.png",
-    qrTarget: "https://milleran41.github.io/codewerk/?v=20260709-4#cookbook"
+    qrTarget: "https://milleran41.github.io/codewerk-source/?v=20260709-4#cookbook"
   },
   {
     id: "timer",
@@ -416,7 +416,7 @@ const localProjectsFallback = [
     downloadMode: "direct",
     downloadUrl: "https://github.com/milleran41/timer/raw/main/dist/timer.exe",
     qrImage: "assets/qr/timer.png",
-    qrTarget: "https://milleran41.github.io/codewerk/?v=20260709-4#timer",
+    qrTarget: "https://milleran41.github.io/codewerk-source/?v=20260709-4#timer",
     videoUrl: "https://www.youtube.com/watch?v=ZANqTWq2ok0",
     videoDescription: "A short FineTimer overview: floating window, start, pause, and time adjustment."
   },
@@ -438,7 +438,7 @@ const localProjectsFallback = [
     downloadMode: "request",
     downloadUrl: "https://github.com/milleran41/MixLab/raw/main/MixLab.exe",
     qrImage: "assets/qr/mixlab.png",
-    qrTarget: "https://milleran41.github.io/codewerk/?v=20260709-4#mixlab"
+    qrTarget: "https://milleran41.github.io/codewerk-source/?v=20260709-4#mixlab"
   },
   {
     id: "calendar-germany",
@@ -459,7 +459,7 @@ const localProjectsFallback = [
     downloadMode: "direct",
     downloadUrl: "https://github.com/milleran41/kalender-deutschland/archive/refs/heads/main.zip",
     qrImage: "assets/qr/calendar-germany.png",
-    qrTarget: "https://milleran41.github.io/codewerk/?v=20260709-4#calendar-germany",
+    qrTarget: "https://milleran41.github.io/codewerk-source/?v=20260709-4#calendar-germany",
     installTitle: "Как установить Kalender Deutschland в Chrome",
     installSteps: [
       "Скачайте архив и распакуйте его в удобную папку.",
@@ -489,7 +489,7 @@ const localProjectsFallback = [
     downloadMode: "direct",
     downloadUrl: "https://raw.githubusercontent.com/milleran41/linkora/main/downloads/Linkora.exe",
     qrImage: "assets/qr/link-manager.png",
-    qrTarget: "https://milleran41.github.io/codewerk/?v=20260709-4#link-manager"
+    qrTarget: "https://milleran41.github.io/codewerk-source/?v=20260709-4#link-manager"
   },
   {
     id: "linkvault",
@@ -511,7 +511,7 @@ const localProjectsFallback = [
     downloadMode: "direct",
     downloadUrl: "https://github.com/milleran41/MyLinks/raw/main/LinkVault.zip",
     qrImage: "assets/qr/linkvault.png",
-    qrTarget: "https://milleran41.github.io/codewerk/?v=20260709-4#linkvault"
+    qrTarget: "https://milleran41.github.io/codewerk-source/?v=20260709-4#linkvault"
   }
 ];
 
