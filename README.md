@@ -19,14 +19,14 @@
 
 Проекты со статусом `soon` не показываются в разделе “Мои программы”.
 
-Сейчас на сайте опубликованы: Taste & Trace, Timer, MixLab, Kalender Deutschland, Linkora и LinkVault. `linkora-v2` не добавлен отдельно, потому что его README указывает на основной репозиторий `linkora`. `Bewerbungsunterlagen` не добавлен, потому что это личное портфолио, а не отдельная программа.
+Сейчас на сайте опубликованы: Timer, MixLab, Kalender Deutschland, Linkora и LinkVault. `linkora-v2` не добавлен отдельно, потому что его README указывает на основной репозиторий `linkora`. `Bewerbungsunterlagen` не добавлен, потому что это личное портфолио, а не отдельная программа.
 
 ## Как создать QR-код
 
 Для карточки программы QR-код должен вести не на скачивание, а на якорь этой программы на сайте:
 
 ```text
-https://milleran41.github.io/codewerk-source/#cookbook
+https://milleran41.github.io/codewerk-source/#timer
 ```
 
 Так человек сможет открыть страницу программы на телефоне, прочитать описание и позже скачать файл уже на компьютере. Не делайте QR-коды на прямые ссылки `.exe` или `.zip`: телефон может сразу начать скачивать компьютерную программу.
@@ -45,7 +45,7 @@ https://milleran41.github.io/codewerk-source/#timer
 https://milleran41.github.io/codewerk-source/
 ```
 
-Сохраните QR-код в папку `assets/qr/`, например `assets/qr/cookbook.png`, и укажите этот путь в `data/projects.json`.
+Сохраните QR-код в папку `assets/qr/`, например `assets/qr/timer.png`, и укажите этот путь в `data/projects.json`.
 
 ## Как опубликовать на GitHub Pages
 

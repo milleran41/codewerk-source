@@ -1,25 +1,5 @@
 [
   {
-    "id": "cookbook",
-    "title": "Taste & Trace / Кулинарная книга",
-    "status": "published",
-    "description": "Windows-программа для ведения личной кулинарной книги: рецепты, категории, заметки, фотографии и детали приготовления в одном месте. Обновлённый просмотр категорий быстрее работает с большими коллекциями.",
-    "features": [
-      "Быстрый старт без загрузки всей базы",
-      "Просмотр категории компактным списком",
-      "До трёх рецептов в строку на широком экране",
-      "Описание рецепта при наведении",
-      "Портативная Windows-сборка",
-      "Рецепты, заметки, фото и детали приготовления"
-    ],
-    "screenshot": "assets/screenshots/cookbook.png",
-    "githubUrl": "https://github.com/milleran41/taste-and-trace-download",
-    "downloadMode": "direct",
-    "downloadUrl": "https://github.com/milleran41/taste-and-trace-download/releases/download/v0.0.0/Taste.Trace-Portable-0.0.0-x64.exe",
-    "qrImage": "assets/qr/cookbook.png",
-    "qrTarget": "https://milleran41.github.io/codewerk-source/?v=20260709-4#cookbook"
-  },
-  {
     "id": "timer",
     "title": "Timer",
     "status": "published",
@@ -64,7 +44,9 @@
     "title": "Kalender Deutschland",
     "status": "published",
     "description": "Chrome-расширение с немецким календарём, праздниками по федеральным землям, интерактивной картой Германии и историческим разделом.",
-    "highlightTerms": ["Chrome-расширение"],
+    "highlightTerms": [
+      "Chrome-расширение"
+    ],
     "features": [
       "Календарь Германии с национальными и региональными праздниками",
       "Выбор федеральной земли",

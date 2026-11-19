@@ -42,7 +42,6 @@ const feedbackProgramEntry = "entry.853632586";
 const ratingSubmitUrl = "https://script.google.com/macros/s/AKfycbxVmeb0logeKWgl7Lw8F7wDQvLyVtvgQ82GqSx15EFuF7Rmc2iBLLNSxEfL_Ke-sM0L/exec";
 const ratingStoragePrefix = "codewerkRatingScore:";
 const updatesProgramNames = {
-  cookbook: "Taste & Trace / Кулинарная книга",
   timer: "Timer",
   mixlab: "MixLab",
   "calendar-germany": "Kalender Deutschland",
@@ -378,27 +377,6 @@ year.textContent = new Date().getFullYear();
 // На GitHub Pages данные загружаются из data/projects.json.
 const localProjectsFallback = [
   {
-    id: "cookbook",
-    title: "Taste & Trace / Кулинарная книга",
-    status: "published",
-    description:
-      "Windows-программа для ведения личной кулинарной книги: рецепты, категории, заметки, фотографии и детали приготовления в одном месте. Обновлённый просмотр категорий быстрее работает с большими коллекциями.",
-    features: [
-      "Быстрый старт без загрузки всей базы",
-      "Просмотр категории компактным списком",
-      "До трёх рецептов в строку на широком экране",
-      "Описание рецепта при наведении",
-      "Портативная Windows-сборка",
-      "Рецепты, заметки, фото и детали приготовления"
-    ],
-    screenshot: "assets/screenshots/cookbook.png",
-    githubUrl: "https://github.com/milleran41/taste-and-trace-download",
-    downloadMode: "direct",
-    downloadUrl: "https://github.com/milleran41/taste-and-trace-download/releases/download/v0.0.0/Taste.Trace-Portable-0.0.0-x64.exe",
-    qrImage: "assets/qr/cookbook.png",
-    qrTarget: "https://milleran41.github.io/codewerk-source/?v=20260709-4#cookbook"
-  },
-  {
     id: "timer",
     title: "Timer",
     status: "published",
@@ -520,19 +498,6 @@ const localRatingsFallback = [];
 
 const projectTranslations = {
   en: {
-    cookbook: {
-      title: "Taste & Trace / Cookbook",
-      description:
-        "A Windows app for keeping a personal cookbook: recipes, categories, notes, photos and cooking details in one place. The updated category view is faster for large recipe collections.",
-      features: [
-        "Fast start without loading the whole database",
-        "Compact list view inside categories",
-        "Up to three recipes per row on wide screens",
-        "Recipe description on hover",
-        "Portable Windows build",
-        "Recipes, notes, photos and cooking details"
-      ]
-    },
     timer: {
       title: "Timer",
       description:
@@ -612,19 +577,6 @@ const projectTranslations = {
     }
   },
   de: {
-    cookbook: {
-      title: "Taste & Trace / Kochbuch",
-      description:
-        "Eine Windows-App für ein persönliches Kochbuch: Rezepte, Kategorien, Notizen, Fotos und Zubereitungsdetails an einem Ort. Die aktualisierte Kategorieansicht ist schneller für große Rezeptsammlungen.",
-      features: [
-        "Schneller Start ohne die ganze Datenbank zu laden",
-        "Kompakte Listenansicht in Kategorien",
-        "Bis zu drei Rezepte pro Zeile auf breiten Bildschirmen",
-        "Rezeptbeschreibung beim Darüberfahren",
-        "Portable Windows-Version",
-        "Rezepte, Notizen, Fotos und Zubereitungsdetails"
-      ]
-    },
     timer: {
       title: "Timer",
       description:
@@ -1508,7 +1460,7 @@ if (window.location.protocol === "file:") {
   setReviews(localReviewsFallback);
   setRatings(localRatingsFallback);
 } else {
-  fetch("data/projects.json?v=20260716-3")
+  fetch("data/projects.json?v=20261119-cleanup")
     .then((response) => {
       if (!response.ok) throw new Error("Не удалось загрузить projects.json");
       return response.json();
